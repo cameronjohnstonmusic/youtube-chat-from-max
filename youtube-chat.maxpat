@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 36.0, 120.0, 486.0, 298.0 ],
+		"rect" : [ 0.0, 285.0, 417.0, 265.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -228,7 +228,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 113.0, 520.0, 75.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 251.0, 98.0, 75.0, 20.0 ],
+					"presentation_rect" : [ 225.0, 76.0, 75.0, 20.0 ],
 					"text" : "Chat Status:"
 				}
 
@@ -246,7 +246,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 188.0, 519.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 334.0, 98.0, 100.0, 22.0 ]
+					"presentation_rect" : [ 308.0, 76.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -285,7 +285,7 @@
 					"patching_rect" : [ 878.0, 165.740341000000058, 57.0, 156.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 15.0, 158.0, 184.0, 49.0 ],
+					"presentation_rect" : [ 16.0, 132.0, 184.0, 49.0 ],
 					"text" : "Check out all of the upcoming events at First Church: http://www.fccla.org/calendar"
 				}
 
@@ -301,7 +301,7 @@
 					"patching_rect" : [ 1078.5, 139.740341000000058, 50.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 15.0, 218.0, 184.0, 49.0 ],
+					"presentation_rect" : [ 16.0, 192.0, 184.0, 49.0 ],
 					"text" : "Thank you for joining us today! We hope you all have a wonderful week."
 				}
 
@@ -309,15 +309,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-34",
-					"linecount" : 13,
+					"linecount" : 11,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 940.0, 121.740341000000058, 54.0, 183.0 ],
+					"patching_rect" : [ 940.0, 121.740341000000058, 57.0, 156.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 15.0, 101.0, 191.0, 49.0 ],
+					"presentation_rect" : [ 16.0, 75.0, 191.0, 49.0 ],
 					"text" : "Please consider contributing to the work we do here at First Church: https://www.fccla.org/give"
 				}
 
@@ -333,7 +333,7 @@
 					"patching_rect" : [ 1005.0, 139.740341000000058, 50.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 15.0, 42.0, 184.0, 49.0 ],
+					"presentation_rect" : [ 16.0, 16.0, 184.0, 49.0 ],
 					"text" : "Good morning all! Thank you for joining us on this beautiful morning in LA."
 				}
 
@@ -358,7 +358,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 446.0, 67.0, 75.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 251.0, 38.0, 75.0, 20.0 ],
+					"presentation_rect" : [ 225.0, 16.0, 75.0, 20.0 ],
 					"text" : "Authenticate"
 				}
 
@@ -373,7 +373,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 416.0, 67.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 334.0, 38.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 308.0, 16.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -385,7 +385,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 244.0, 67.0, 86.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 251.0, 67.0, 75.0, 20.0 ],
+					"presentation_rect" : [ 225.0, 45.0, 75.0, 20.0 ],
 					"text" : "find live chat"
 				}
 
@@ -400,7 +400,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 332.0, 67.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 334.0, 67.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 308.0, 45.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -411,7 +411,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 131.0, 324.0, 48.0, 22.0 ],
+					"patching_rect" : [ 923.0, 391.0, 48.0, 22.0 ],
 					"text" : "chat $1"
 				}
 
@@ -516,7 +516,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 373.5, 414.0, 400.0, 220.0 ],
+					"patching_rect" : [ 678.0, 482.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -552,10 +552,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 416.0, 338.0, 281.0, 22.0 ],
+					"patching_rect" : [ 416.0, 440.0, 281.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -940,7 +942,7 @@
 			}
 , 			{
 				"name" : "youtube-chat.js",
-				"bootpath" : "~/Desktop/youtube-chat",
+				"bootpath" : "~/Documents/GitHub/youtube-chat-from-max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

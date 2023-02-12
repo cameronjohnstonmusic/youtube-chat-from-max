@@ -22,5 +22,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronjohnstonmusic/youtube-chat-from-max.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cameronjohnstonmusic/youtube-chat-from-max/issues"
+  },
+  "homepage": "https://github.com/cameronjohnstonmusic/youtube-chat-from-max#readme",
   "description": ""
 }

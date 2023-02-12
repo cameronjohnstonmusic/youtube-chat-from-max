@@ -1,0 +1,9 @@
+npm ERR! code ENOTEMPTY
+npm ERR! syscall rename
+npm ERR! path /Users/soundteamadmin/Documents/GitHub/youtube-chat-from-max/node_modules/open
+npm ERR! dest /Users/soundteamadmin/Documents/GitHub/youtube-chat-from-max/node_modules/.open-IBk4gd6U
+npm ERR! errno -66
+npm ERR! ENOTEMPTY: directory not empty, rename '/Users/soundteamadmin/Documents/GitHub/youtube-chat-from-max/node_modules/open' -> '/Users/soundteamadmin/Documents/GitHub/youtube-chat-from-max/node_modules/.open-IBk4gd6U'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/soundteamadmin/.npm/_logs/2023-02-12T17_56_42_997Z-debug.log
