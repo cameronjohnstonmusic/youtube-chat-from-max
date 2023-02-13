@@ -140,14 +140,18 @@ youtubeService.findActiveChat = async () => {
         broadcastStatus: 'active'
     });
     const latestChat = response.data.items[0];
+    //loop this so users dont have to find live stream manually
 
     if (latestChat && latestChat.snippet.liveChatId) {
         liveChatId = latestChat.snippet.liveChatId;
         maxApi.outlet('chatstatus', '1')
+        maxApi.outlet('livestatus', '1')
         console.log("Chat ID Found:", liveChatId);
     } else {
         console.log("No Active Chat Found");
         maxApi.outlet('chatstatus', '0')
+        maxApi.outlet('livestatus', '0')
+
     }
 
 };
@@ -188,12 +192,16 @@ youtubeService.insertMessage = (messageText = 'Hello World') => {
     })
 };
 
-checkTokens();
+//checkTokens();
 
 
 module.exports = youtubeService;
 
 
+maxApi.addHandler("bang", () => {
+    checkTokens();
+    //console.log()
+});
 
 
 
