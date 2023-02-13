@@ -7,6 +7,7 @@ const util = require('util'); // included in node
 const fs = require('fs'); //included in node
 const open = require('open');
 const destroyer = require('server-destroy');
+const console = require("console");
 
 const writeFilePromise = util.promisify(fs.writeFile);
 const readFilePromise = util.promisify(fs.readFile);
@@ -16,6 +17,7 @@ let nextPage;
 const intervalTime = 5000;
 let interval;
 let chatMessages = [];
+let latestChat;
 
 const save = async (path, data) => {
     await writeFilePromise(path, data);
@@ -134,12 +136,12 @@ const checkTokens = async () => {
 };
 
 youtubeService.findActiveChat = async () => {
-    const response = await youtube.liveBroadcasts.list({
-        auth,
-        part: 'snippet',
-        broadcastStatus: 'active'
-    });
-    const latestChat = response.data.items[0];
+    // const response = await youtube.liveBroadcasts.list({
+    //     auth,
+    //     part: 'snippet',
+    //     broadcastStatus: 'active'
+    // });
+    // latestChat = response.data.items[0];
     //loop this so users dont have to find live stream manually
 
     if (latestChat && latestChat.snippet.liveChatId) {
@@ -155,6 +157,28 @@ youtubeService.findActiveChat = async () => {
     }
 
 };
+
+
+
+const getBroadcasts = async () => {
+    console.log("Scanning for Stream");
+    const response = await youtube.liveBroadcasts.list({
+        auth,
+        part: 'snippet',
+        broadcastStatus: 'active'
+    });
+
+    if (response) {
+        latestChat = response.data.items[0];
+        //maxApi.outlet('livestatus', '1')
+        //console.log('Stream found')
+        youtubeService.findActiveChat();
+    } else {
+        //maxApi.outlet('livestatus', '0')
+        //console.log('Stream not found')
+    }
+
+}
 
 const getChatMessages = async () => {
     const response = youtube.liveChatMessages.list({
@@ -192,6 +216,13 @@ youtubeService.insertMessage = (messageText = 'Hello World') => {
     })
 };
 
+youtubeService.startTrackingBroadcasts = async () => {
+    interval = setInterval(getBroadcasts, intervalTime);
+    console.log("Scanning for Stream");
+
+
+};
+
 //checkTokens();
 
 
@@ -200,6 +231,11 @@ module.exports = youtubeService;
 
 maxApi.addHandler("bang", () => {
     checkTokens();
+    setTimeout(function () {
+        youtubeService.startTrackingBroadcasts();
+        console.log("Detecting Streams");
+    }, 2000);
+
     //console.log()
 });
 
