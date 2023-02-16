@@ -1,0 +1,9 @@
+npm ERR! code ENOTEMPTY
+npm ERR! syscall rename
+npm ERR! path /Users/CameronJohnston/Documents/Programming/youtube-chat/node_modules/open
+npm ERR! dest /Users/CameronJohnston/Documents/Programming/youtube-chat/node_modules/.open-iVMcCIKY
+npm ERR! errno -66
+npm ERR! ENOTEMPTY: directory not empty, rename '/Users/CameronJohnston/Documents/Programming/youtube-chat/node_modules/open' -> '/Users/CameronJohnston/Documents/Programming/youtube-chat/node_modules/.open-iVMcCIKY'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/CameronJohnston/.npm/_logs/2023-02-13T23_29_38_199Z-debug.log
