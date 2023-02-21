@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 23.0, 329.0, 398.0, 325.0 ],
+		"rect" : [ 127.0, 239.0, 394.0, 321.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,53 +39,6 @@
 		"subpatcher_template" : "Sidebar",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 788.0, 414.0, 70.0, 22.0 ],
-					"text" : "s liveStatus"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 682.5, 368.0, 70.0, 22.0 ],
-					"text" : "loadmess 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-256",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 568.0, 344.0, 97.0, 22.0 ],
-					"text" : "udpreceive 8001"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-166",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 568.0, 368.0, 109.0, 22.0 ],
-					"text" : "OSC-route /stream"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "button",
@@ -118,34 +71,6 @@
 					"outlettype" : [ "bang", "bang", "bang" ],
 					"patching_rect" : [ 416.0, 82.0, 42.0, 22.0 ],
 					"text" : "t b b b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 190.0, 7.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 320.5, 18.5, 72.0, 20.0 ],
-					"text" : "Chat Ready"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "led",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"oncolor" : [ 0.980392156862745, 0.215686274509804, 0.090196078431373, 1.0 ],
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 788.0, 361.0, 47.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 267.5, 5.0, 47.0, 47.0 ]
 				}
 
 			}
@@ -196,8 +121,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -233,18 +158,6 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-17",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 96.0, 28.0, 68.0, 22.0 ],
-									"text" : "r liveStatus"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-12",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -252,30 +165,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 197.0, 313.0, 29.5, 22.0 ],
 									"text" : "1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "toggle",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 96.0, 58.922607421875, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 96.0, 118.922607421875, 32.0, 22.0 ],
-									"text" : "gate"
 								}
 
 							}
@@ -460,7 +349,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 109.0, 91.0, 53.0, 23.0 ],
+									"patching_rect" : [ 106.0, 110.0, 53.0, 23.0 ],
 									"text" : "midiin b"
 								}
 
@@ -610,13 +499,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"source" : [ "obj-17", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-19", 0 ]
 								}
@@ -720,13 +602,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-464", 0 ],
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-27", 1 ],
 									"source" : [ "obj-463", 1 ]
 								}
@@ -755,7 +630,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 1 ],
+									"destination" : [ "obj-464", 0 ],
 									"source" : [ "obj-466", 0 ]
 								}
 
@@ -771,13 +646,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-470", 0 ],
 									"source" : [ "obj-471", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -1161,8 +1029,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -1187,20 +1053,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 532.5, 329.5, 425.5, 329.5 ],
 					"source" : [ "obj-15", 0 ]
@@ -1212,13 +1064,6 @@
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 545.5, 328.5, 425.5, 328.5 ],
 					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-166", 0 ]
 				}
 
 			}
@@ -1318,13 +1163,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-166", 0 ],
-					"source" : [ "obj-256", 0 ]
 				}
 
 			}
@@ -1482,10 +1320,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
@@ -1505,7 +1339,7 @@
 			}
 , 			{
 				"name" : "youtube-chat.js",
-				"bootpath" : "~/Documents/GitHub/youtube-chat-from-max",
+				"bootpath" : "~/Documents/Programming/youtube-chat",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
