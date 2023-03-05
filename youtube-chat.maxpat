@@ -156,6 +156,7 @@
 						"style" : "",
 						"subpatcher_template" : "Sidebar",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-48",
@@ -187,8 +188,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 601.0, 258.0, 41.0, 22.0 ],
-									"text" : "stomy"
+									"patching_rect" : [ 601.0, 258.0, 44.0, 22.0 ],
+									"text" : "stormy"
 								}
 
 							}
@@ -312,8 +313,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 1,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 1
 									}
 ,
@@ -1320,8 +1319,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
