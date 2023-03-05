@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 127.0, 239.0, 401.0, 327.0 ],
+		"rect" : [ 703.0, 559.0, 401.0, 327.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -156,7 +156,6 @@
 						"style" : "",
 						"subpatcher_template" : "Sidebar",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-48",
@@ -313,6 +312,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 1,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 1
 									}
 ,
@@ -1030,7 +1031,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 212.0, 132.0, 81.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 303.0, 67.0, 81.0, 20.0 ],
+					"presentation_rect" : [ 303.0, 66.0, 81.0, 20.0 ],
 					"text" : "Restart Script"
 				}
 
@@ -1319,6 +1320,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -1629,14 +1632,14 @@
 			}
 , 			{
 				"name" : "weather-chat.js",
-				"bootpath" : "~/Documents/Programming/youtube-chat",
+				"bootpath" : "~/Documents/GitHub/youtube-chat-from-max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "youtube-chat.js",
-				"bootpath" : "~/Documents/Programming/youtube-chat",
+				"bootpath" : "~/Documents/GitHub/youtube-chat-from-max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
