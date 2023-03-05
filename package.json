@@ -5,8 +5,10 @@
     "google-auth-library": "^8.7.0",
     "googleapis": "^110.0.0",
     "http": "^0.0.1-security",
+    "i": "^0.3.7",
     "node-fetch": "^2.6.9",
     "open": "^8.4.0",
+    "openweather-api-node": "^2.1.2",
     "server-destroy": "^1.0.1",
     "url": "^0.11.0"
   },

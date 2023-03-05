@@ -1,9 +1,0 @@
-npm ERR! code ENOTEMPTY
-npm ERR! syscall rename
-npm ERR! path /Users/soundteamadmin/Desktop/youtube-chat/node_modules/open
-npm ERR! dest /Users/soundteamadmin/Desktop/youtube-chat/node_modules/.open-rxZiCf35
-npm ERR! errno -66
-npm ERR! ENOTEMPTY: directory not empty, rename '/Users/soundteamadmin/Desktop/youtube-chat/node_modules/open' -> '/Users/soundteamadmin/Desktop/youtube-chat/node_modules/.open-rxZiCf35'
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /Users/soundteamadmin/.npm/_logs/2023-02-12T02_06_37_699Z-debug.log
